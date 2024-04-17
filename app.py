@@ -6,11 +6,11 @@ st.set_page_config(page_title="DBX Connector Generator", layout="wide")
 st.title("DBX Connector Generator")
 
 # User inputs
-databricks_instance = st.text_input("Databricks Instance", "adb-1234567890123456.17")
-warehouse_id = st.text_input("Warehouse ID", "195343e7d308fd0f")
-db_name = st.text_input("Database Name", "default_db")
+databricks_instance = st.text_input("Databricks Instance", "adb-################.##")
+warehouse_id = st.text_input("Warehouse ID", "abcdefghijklmnop")
+db_name = st.text_input("Database Name", "db_name")
 table_names_input = st.text_area("Enter table names, separated by commas or new lines",
-                                 "table1, table2, table3")
+                                 "jordan, jackson, tyson")
 
 # Parse table names and remove whitespace
 table_names = [table.strip() for table in table_names_input.split(",") if table.strip()]
